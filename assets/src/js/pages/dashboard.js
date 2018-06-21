@@ -54,7 +54,7 @@ class Dashboard extends Component {
               <Chart before={state.before} after={state.after}  />
             </div>
             <div class="box box-pages animated fadeInUp delayed_04s">
-              <Table endpoint="stats/pages" headers={["Top pages", "Views", "Uniques"]} before={state.before} after={state.after} />
+              <Table endpoint="stats/pages" headers={["Top pages", "Views", "Uniques"]} before={state.before} after={state.after} showHostname="true"/>
             </div>
             <div class="box box-referrers animated fadeInUp delayed_04s">
               <Table endpoint="stats/referrers" headers={["Top referrers", "Views", "Uniques"]} before={state.before} after={state.after} showHostname="true" />

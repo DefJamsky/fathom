@@ -69,7 +69,7 @@ function trackPageview() {
   }
 
   // get the path or canonical
-  let path = location.host + location.pathname + location.search;
+  let path = location.pathname + location.search;
 
   // parse path from canonical, if page has one
   let canonical = document.querySelector('link[rel="canonical"][href]');
