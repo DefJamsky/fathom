@@ -33,7 +33,7 @@ class Dashboard extends Component {
       <header class="section">
         <nav class="main-nav animated fadeInDown">
             <ul>
-              <li class="logo"><a href="/">Fathom</a></li>
+              <li class="logo"><a href="/">Fathom - A Studio419 analytics tool</a></li>
               <li class="visitors"><Realtime onError={props.onLogout} /></li>
               <li class="spacer">&middot;</li>
               <li class="signout"><LogoutButton onSuccess={props.onLogout} /></li>
