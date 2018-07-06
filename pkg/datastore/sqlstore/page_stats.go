@@ -32,7 +32,7 @@ func (db *sqlstore) GetAggregatedPageStats(startDate time.Time, endDate time.Tim
 	var result []*models.PageStats
 	query := db.Rebind(`SELECT 
 		Replace(hostname, 'www.', '') AS hostnameReplaced,
-		'' AS pathname, 
+		'/' AS pathname, 
 		SUM(pageviews) AS pageviews, 
 		SUM(visitors) AS visitors, 
 		SUM(entries) AS entries, 
