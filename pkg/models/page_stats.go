@@ -5,7 +5,7 @@ import (
 )
 
 type PageStats struct {
-	Hostname       string    `db:"hostname"`
+	Hostname       string    `db:"hostnameReplaced"`
 	Pathname       string    `db:"pathname"`
 	Pageviews      int64     `db:"pageviews"`
 	Visitors       int64     `db:"visitors"`
